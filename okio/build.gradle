@@ -30,6 +30,7 @@ jmh {
 dependencies {
   signature 'org.codehaus.mojo.signature:java16:1.1@signature'
 
+  implementation project(':platform:jvm')
   implementation deps.kotlin.stdLib.jdk6
   compileOnly deps.animalSniffer.annotations
   compileOnly deps.jsr305
